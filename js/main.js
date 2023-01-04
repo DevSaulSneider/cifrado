@@ -9,9 +9,20 @@ function encriptar() {
      // alert(mensaje + password);
 
     if(password == PasswordSistema){
-        alert ("contraseña correcta: ingresaste");
+        // alert ("contraseña correcta: ingresaste");
+        document.getElementById("error").innerHTML = " ";
+        var mensajeEncriptado = btoa(mensaje);
+        // alert(mensajeEncriptado);
+        document.getElementById("msjEncrip").innerHTML = mensajeEncriptado;
+        
     }else{
-        alert(MensajeError);
+        // alert(MensajeError);
+        document.getElementById("error").innerHTML = MensajeError;
+        document.getElementById("msjEncrip").innerHTML = "";
     }
  }
+function desencriptar() {
+    var mensajeCodigo = document.getElementById("msgCodigo").value;
+    var mensajeDesencriptado = atob();
 
+}
