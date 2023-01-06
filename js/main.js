@@ -18,11 +18,16 @@ function encriptar() {
     }else{
         // alert(MensajeError);
         document.getElementById("error").innerHTML = MensajeError;
+        document.getElementById("error").className = "alerta";
+        
         document.getElementById("msjEncrip").innerHTML = "";
     }
  }
 function desencriptar() {
     var mensajeCodigo = document.getElementById("msgCodigo").value;
-    var mensajeDesencriptado = atob();
+    var mensajeDesencriptado = atob(mensajeCodigo);
 
+    // alert(mensajeDesencriptado);
+
+    document.getElementById("msjReal").innerHTML = mensajeDesencriptado;
 }
