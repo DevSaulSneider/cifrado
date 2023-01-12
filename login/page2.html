@@ -4,44 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
-    <link rel="stylesheet" href="css/stylos.css">
+    <title>page2</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body> 
     <header>
         <h1>Codificador y Decodificador</h1> <hr> <br><br>
+        <h2>Bienvenido: <span id="usser"></span></h2>
     </header>
 
     <main>
         <label for="mensaje">Mensaje:</label>
         <input type="text" id="mensaje" onkeyup="javascript:this.value=this.value.toUpperCase();"><br><br>
         <label for="mensaje">Desplazamiento:</label>
-        <input type="text" id="Desplazamiento"><br><br> 
+        <input type="number" id="Desplazamiento"><br><br> 
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password">
-        <br><br>
 
-        <button onclick="encriptar()">Enviar</button>
-        <br><br> <hr> <br> <br>
+        <button onclick="encriptar()">Encriptar</button>
+        <br><br>  <br> <br>
 
         <label for="msjEncrip">Mensaje Encriptado:</label>
         <span id="msjEncrip"></span>
-        <br> <br>
+        <br> <br><hr> <br><br><br>
 
         <label for="msgCodigo">Codigo del mensaje:</label>
         <input type="text" id="msgCodigo">
         <br><br>
         <button onclick="desencriptar()">Desencriptar</button>
-        <br><br><hr><br><br>
+        <br><br><br><br>
 
         <label for="msjReal">Mensaje Real</label>
         <span id="msjReal"></span>
         <br><br>
 
-        <span id="error"></span>
+        <span id="error"></span><hr>
 
     </main>
-    <script src="js/main.js"></script>
+    <script src="js/page2.js"></script>
 </body>
 </html>
